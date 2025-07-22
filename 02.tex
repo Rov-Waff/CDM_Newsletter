@@ -1,4 +1,4 @@
-\documentclass[UTF8,fontset=fandol]{ctexart}
+\documentclass[UTF8]{ctexart}
 \title{猫站小报 第 2 期}
 \author{猫站小报编辑部}
 \date{\today}
@@ -37,60 +37,105 @@ CAPCHAT，俗称验证码，是用来防机器人和爬虫的。由于猫站几�
 \pagebreak
 
 \part{积木纪元}
-\subsection{作品A}
-\includegraphics[width=0.5\textwidth]{assets/01/kitten-1.png}
+\subsection{时之流逝 : 回归}
+\includegraphics[width=0.4\textwidth]{assets/02/kitten-1.png}
 
 \noindent
-\textbf{作者：} \\
-\textbf{ID：} \\
-\textbf{介绍：} \\
-\textbf{编辑评：}
-\hfill\includegraphics[width=0.08\columnwidth]{assets/01/kitten-1-qrc.png}
-\subsection{作品B}
-\includegraphics[width=0.5\textwidth]{assets/01/kitten-2.png}
+\textbf{作者：} 虚数\\
+\textbf{ID：} 273015666\\
+\textbf{介绍：}一个用Kitten实现的3D作品，根据虚数给编辑透露出的代码片段，他几乎用kitten手搓了一个OpenGL实现。此作品尚未完成，但值得所有人的点赞鼓励 \\
+\textbf{编辑评：}编辑是调包侠，没资格评价造轮子的大佬的作品
+\hfill\includegraphics[width=0.08\columnwidth]{assets/02/kitten-1-qrc.png}
+\subsection{火柴人你瞅啥}
+\includegraphics[width=0.4\textwidth]{assets/02/kitten-2.png}
 
 \noindent
-\textbf{作者：} \\
-\textbf{ID：} \\
-\textbf{介绍：}\\
-\textbf{编辑评：}
-\hfill\includegraphics[width=0.08\columnwidth]{assets/01/kitten-2-qrc.png}
+\textbf{作者：}雨果猫 \\
+\textbf{ID：}266291679 \\
+\textbf{介绍：}一个使用Nemo制作的小游戏，完成度相当高\\
+\textbf{编辑评：}其实更适合用手机玩，有些要素确实很像广告里的小游戏（
+\hfill\includegraphics[width=0.08\columnwidth]{assets/02/kitten-2-qrc.png}
 
 \pagebreak
 \part{代码诗篇}
-\subsection{作品A}
-\includegraphics[width=0.5\textwidth]{assets/01/python-1.png}
+\subsection{未知}
+\includegraphics[width=0.5\textwidth]{assets/02/python-1.png}
 
 \noindent
-\textbf{作者：} \\
-\textbf{链接：}https://shequ.codemao.cn/community/1632113 \\
-\textbf{介绍：}\\
-\textbf{编辑评：}
-\hfill \includegraphics[width=0.08\columnwidth]{assets/01/python-1-qrc.png}
+\textbf{作者：} 单纯的独角蛛oC-8\\
+\textbf{链接：}https://shequ.codemao.cn/community/1634470 \\
+\textbf{介绍：}这是一个快要弃坑的闭源作品，根据作者所放出的图，代码量有一千余行\\
+\textbf{编辑评：}我更希望能借这个小平台给作者注入一些热情
+\hfill \includegraphics[width=0.08\columnwidth]{assets/02/python-1-qrc.png}
 
-\subsection{作品B}
-\includegraphics[width=0.4\textwidth]{assets/02/python-2.png}
+\subsection{原神抽卡模拟器}
+\includegraphics[width=0.6\textwidth]{assets/02/python-2.png}
 
 \noindent
 \textbf{作者：}不知名的原神玩家 \\
-\textbf{Github仓库地址：} \\
-\textbf{介绍：}一个用Python写的原神抽卡模拟器，代码量600多行\\
-\textbf{编辑评：}编辑部已放弃重构
+\textbf{链接：}https://shequ.codemao.cn/community/1632113 \\
+\textbf{介绍：}一个用Python写的原神抽卡模拟器，代码量1000多行\footnotemark\\
+\textbf{编辑评：}编辑部已放弃重构,Black代码格式化都跑崩了（
 \hfill \includegraphics[width=0.08\columnwidth]{assets/02/python-2-qrc.png}
-
+\footnotetext{源代码存在错误，修正后放在了编辑的Github上，后记中自取}
 \pagebreak
 \part{传火者}
 \begin{center}
 	\zihao{-1}
-	\textbf{标题}
+	\textbf{Python中的Lambda表达式}
 	\normalsize
-	供稿：
+	供稿：xiaole233
 \end{center}
+在Python中，我们常用def关键字来定义函数，像是这样
+\begin{lstlisting}[language=python]
+def add(a,b):
+	return a+b;
+\end{lstlisting}
+但你知道吗，除了用def，还有另一种方式来定义函数，这就是lambda表达式，以下是一个lambda表达式的示例
+\begin{lstlisting}[language=python]
+add=lambda a,b:a+b
+print(add(1,2))
+\end{lstlisting}
+lambda表达式本质上是一种匿名函数，他可以防止简单的函数造成命名空间污染，当然，你也可以把这个匿名函数赋值给一个变量从而让这个函数具有名称。lambda仅支持单行表达式，适合短期使用的简单逻辑。它的基本语法是:
+\begin{lstlisting}
+lambda 参数列表:返回值表达式
+\end{lstlisting}
+lambda常用于转换数据，自定义排序规则，动态生成函数，条件逻辑封装和GUI的事件处理，这些环境下使用lambda可以大大节约代码量，提高可读性。
 
+\textbf{请注意！}对于需要复用的代码，不要使用lambda，不要把复杂的逻辑写到lambda表达式里面，也不要尝试嵌套lambda表达式，这样会让你的代码可读性大大降低。
 
+总结一点，lambda并不是要取代def，而是要简化def,使用lambda，请遵循以下原则：
+\begin{itemize}
+	\item 逻辑能用20秒理解，用lambda代替def
+	\item 操作集中在单行的表达式中，用lambda代替def
+	\item 你要定义的函数名没有意义，用lambda代替def
+\end{itemize}
+\pagebreak
+\part{撤硕儿}
+\begin{center}
+\textbf{该板块为第2期新增，主要是编辑部和猫舍成员对社区某些帖子的吐槽，来满足各位的吃屎欲望}
+\end{center}
+\includegraphics[width=0.8\textwidth]{assets/02/toliet-1.png} \\
+\textbf{编辑评}:左脑思考素食，右脑思考左脑(图片的左右顺序)
+
+\includegraphics[width=0.8\textwidth]{assets/02/toliet-2.png} \\
+\textbf{编辑评}:来考古
+
+\includegraphics[width=0.8\textwidth]{assets/02/toliet-3.png} \\
+\textbf{编辑评}:万一这是C- -呢（
+
+\includegraphics[width=0.8\textwidth\\]{assets/02/toliet-4.png} \\
+\textbf{虚数}:坏了我都会
+\pagebreak
 \part{后记}
 \paragraph{编辑} 目前唯一编辑也是主笔：xiaole233 邮箱地址:xiao\_2010@outlook.com
-\paragraph{版权说明} 刊登的所有作品及文章均以取得原作者同意。\\ 
-猫站小报 第一期  © 2025 by 小报编辑部 is licensed under CC BY 4.0.\\ To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
+\paragraph{感谢截至到\today 支持小报的读者们,排名不分先后：}
+\begin{center}虚数、悠​闲​的​阿​米​巴​、Mecat、荔枝xi、小刘12345678、编程追梦者、无敌版滑稽战神
+\end{center}
+\paragraph{版权说明} 
+猫站小报 © 2025 by 小报编辑部 is licensed under CC BY 4.0.\\ To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/ \\
+\begin{center}
+$T^2MG=4\pi^2r^3$ 踢踢母鸡等于死派派啊啊啊
+\end{center}
 
 \end{document}
