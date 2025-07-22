@@ -328,3 +328,4 @@ TSWLatexianTemp*
 #*Notes.bib
 node_modules/
 cache/
+dist/
