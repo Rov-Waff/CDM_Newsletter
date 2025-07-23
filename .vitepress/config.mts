@@ -1,6 +1,14 @@
 import { defineConfig } from 'vitepress'
+import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss';
 
 // https://vitepress.dev/reference/site-config
+const base_url="https://cdm-newsletter.pages.dev"
+const rssOptions: RSSOptions = {
+  title: '站点名称',
+  baseUrl: base_url,
+  copyright: '版权声明',
+  // 可选：作者、描述等
+};
 export default defineConfig({
   title: "猫站小报",
   description: "做最优质的社区报刊",
@@ -26,5 +34,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Rov-Waff/CDM_Newsletter' }
     ]
+  },vite:{
+    plugins:[RssPlugin(rssOptions)]
   }
 })
