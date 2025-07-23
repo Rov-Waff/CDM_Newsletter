@@ -11,15 +11,17 @@ export default defineConfig({
       { text: '投稿', link: '/upload' }
     ],
 
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
+    sidebar: [
+      {
+        text: '读者须知',
+        items: [
+          { text: '阅读指南', link: '/read' },
+          { text: '投稿指南', link: '/upload' },
+          { text:"帖子传送门",link:"/portal"},
+          { text:"贡献指南",link:"/contribute" }
+        ]
+      }
+    ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Rov-Waff/CDM_Newsletter' }
