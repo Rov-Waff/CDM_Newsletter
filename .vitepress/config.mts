@@ -36,6 +36,17 @@ export default defineConfig({
           { text:"帖子传送门",link:"/portal"},
           { text:"贡献指南",link:"/contribute" }
         ]
+      },
+      {
+        text:"第三期",
+        items:[
+          {text:"编辑部专版",link:"/03/head"},
+          {text:"积木纪元",link:"/03/kitten"},
+          {text:"代码诗人",link:"/03/code"},
+          {text:"传火者",link:"/03/tutorial"},
+          {text:"撤硕儿",link:"/03/holy-posts"},
+          {text:"后记",link:"/03/end"},
+        ]
       }
     ],
 

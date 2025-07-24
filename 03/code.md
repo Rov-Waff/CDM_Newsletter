@@ -8,14 +8,14 @@
 
 **作者**:xiaole233
 
-**链接**:[Github仓库]() [在线体验](https://imgainary-number-happy-site.pages.dev/)
+**链接**:[Github仓库](https://github.com/Rov-Waff/imgainary-number-happy-site) [在线体验](https://imgainary-number-happy-site.pages.dev/)
 
 **介绍**：掉落物形态的虚数！
 
 **编辑评**：猫站3D第一人必须要以3D形式挂在网页上！
 
 **虚数**：你学3D就为了这个是吧（
-<img src="assets/code-3.png" style="float:right" width=60px>
+<img src="./assets/code-3.png" style="float:right" width=60px>
 
 ## 请输入文本
 
