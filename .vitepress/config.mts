@@ -1,9 +1,18 @@
 import { defineConfig } from 'vitepress'
 import mathjax3 from 'markdown-it-mathjax3'
 
+import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss';
+
 const customElements = [  
 'math', 'maction', 'maligngroup', 'malignmark', 'menclose', 'merror', 'mfenced', 'mfrac', 'mi', 'mlongdiv', 'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom', 'mroot', 'mrow', 'ms', 'mscarries', 'mscarry', 'msgroup', 'mstack', 'mlongdiv', 'msline', 'mspace', 'msqrt', 'msrow', 'mstyle', 'msub', 'msup', 'msubsup', 'mtable', 'mtd', 'mtext', 'mtr', 'munder', 'munderover'];
 // https://vitepress.dev/reference/site-config
+const base_url="https://cdm-newsletter.pages.dev"
+const rssOptions: RSSOptions = {
+  title: '站点名称',
+  baseUrl: base_url,
+  copyright: '版权声明',
+  // 可选：作者、描述等
+};
 export default defineConfig({
   title: "猫站小报",
   description: "做最优质的社区报刊",
@@ -53,5 +62,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Rov-Waff/CDM_Newsletter' }
     ]
+  },vite:{
+    plugins:[RssPlugin(rssOptions)]
   }
 })
