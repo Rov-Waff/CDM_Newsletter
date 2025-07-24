@@ -4,7 +4,7 @@
 
 ## 虚数快乐站
 
-![虚数快乐块](./assets/code-1.png)
+![虚数快乐块](assets/code-1.png)
 
 **作者**:xiaole233
 
@@ -15,13 +15,13 @@
 **编辑评**：猫站3D第一人必须要以3D形式挂在网页上！
 
 **虚数**：你学3D就为了这个是吧（
-<img src="./assets/code-3.png" style="float:right" width=60px>
+<img src="assets/code-3.png" style="float:right" width=60px>
 
 ## 请输入文本
 
 **作者**：空钩位
 
-![请输入文本](./assets/code-2.png)
+![请输入文本](assets/code-2.png)
 
 **链接**：[社区](https://shequ.codemao.cn/community/1634692)
 
