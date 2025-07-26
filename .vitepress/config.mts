@@ -56,6 +56,18 @@ export default defineConfig({
           {text:"撤硕儿",link:"/03/holy-posts"},
           {text:"后记",link:"/03/end"},
         ]
+      },
+      {
+        text:"第四期",
+        link:"/04/index",
+        items:[
+          {text:"编辑部专版",link:"/04/head"},
+          {text:"积木纪元",link:"/04/kitten"},
+          {text:"代码诗人",link:"/04/code"},
+          {text:"传火者",link:"/04/tutorial"},
+          {text:"社区观察",link:"/04/toliet"},
+          {text:"后记",link:"/04/end"},
+        ]
       }
     ],
 
