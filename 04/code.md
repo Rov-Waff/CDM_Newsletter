@@ -18,7 +18,7 @@
 <img src="./assets/code-1-qrc.png" width="60px" style="float:right">
 
 ## 2D联机游戏
-![2](assets/code-2.PNG)
+![2](assets/code-2.png)
 
 **作者**:winXP11242
 

@@ -15,7 +15,7 @@ xiaole233:众所周知电脑一天产生的辐射甚至低于一根香蕉
 
 xiaole233:建议给Kitten引入看广告复活
 
-![img](./assets/toliet-3.PNG)
+![img](./assets/toliet-3.png)
 
 xiaole233:好一个猫站匿名用户！
 

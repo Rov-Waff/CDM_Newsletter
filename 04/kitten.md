@@ -4,7 +4,7 @@
 
 ## [庄园纳凉夜-夏日小镇[未完成]](https://shequ.codemao.cn/work/276573642)
 
-![1](assets/kitten-1.PNG)
+![1](assets/kitten-1.png)
 **作者**:回忆中的玩具铺
 
 **介绍**：操控“小女孩”在夏日小镇游玩，目前尚未完成
