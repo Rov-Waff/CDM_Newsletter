@@ -68,6 +68,17 @@ export default defineConfig({
           {text:"社区观察",link:"/04/toliet"},
           {text:"后记",link:"/04/end"},
         ]
+      },{
+        text:"第五期",
+        link:"/05/index",
+        items:[
+          {text:"编辑部专版",link:"/05/head"},
+          {text:"积木纪元",link:"/05/kitten"},
+          {text:"代码诗人",link:"/05/code"},
+          {text:"传火者",link:"/05/tutorial"},
+          {text:"社区观察",link:"/05/toliet"},
+          {text:"后记",link:"/05/end"},
+        ]
       }
     ],
 
