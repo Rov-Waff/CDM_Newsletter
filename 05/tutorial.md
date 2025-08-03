@@ -60,4 +60,5 @@ int binarySearch(int arr[],int size,int target){
 ## 5.实战
 
 ### [洛谷P2249](https://www.luogu.com.cn/problem/P2249)
+
 如果用线性搜索法，你至多需要查找$nm$次,也就是$O(nm)$次，显然会TLE,但由于输入的数据单调不减（就是升序排序），可以使用二分查找来压缩时间复杂度

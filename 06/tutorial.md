@@ -123,7 +123,7 @@ const camera = new THREE.PerspectiveCamera(
   camera_config.fov,
   camera_config.aspech,
   camera_config.near,
-  camera_config.far
+  camera_config.far,
 ); //创建视锥透视相机
 camera.position.z = 4.5; //摄像机z方向坐标为4.5
 const scene = new THREE.Scene(); //创建场景

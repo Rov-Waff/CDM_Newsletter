@@ -18,42 +18,44 @@
 |5|16|42|98|210|
 
 发现规律了吗？若可行的路线数为$f$，则
+
 1. 当x或y为0时，$f=x$或$f=y$
 2. 当x或y不为0时，这个格子的数字等于它上方的哪一个格子的数字加左边的那一个格子的数字。
 
 若这张表为二位数组f[i][j]，则这个数组中的元素满足该表达式
-$$$
+
+$$
 f[i][j]=f[i-1][j]+f[i][j-1]
-$$$
+$$
 
 然后我们开始考虑马的问题。这个也十分简单，马的位置和马能攻击的坐标无法到达，也就是这些点的可到达总路线为0。在程序开始时我们把这些地方填成0就行了.
 
 ## 代码实现
 
-``` python
+```python
 def count_paths(n, m, horse_x, horse_y):
     # 初始化棋盘，标记障碍位置
     blocked = [[False]*(m+1) for _ in range(n+1)]
     # 马的位置和攻击位置
     moves = [ (1,2),(2,1),(-1,2),(-2,1),
               (1,-2),(2,-1),(-1,-2),(-2,-1) ]
-    
+
     blocked[horse_x][horse_y] = True
     for dx, dy in moves:
         x, y = horse_x + dx, horse_y + dy
         if 0 <= x <= n and 0 <= y <= m:
             blocked[x][y] = True
-    
+
     # 初始化DP表
     dp = [[0]*(m+1) for _ in range(n+1)]
     dp[0][0] = 0 if blocked[0][0] else 1
-    
+
     # 处理第一行和第一列
     for i in range(1, n+1):
         dp[i][0] = 0 if blocked[i][0] else dp[i-1][0]
     for j in range(1, m+1):
         dp[0][j] = 0 if blocked[0][j] else dp[0][j-1]
-    
+
     # 填充DP表
     for i in range(1, n+1):
         for j in range(1, m+1):
@@ -61,7 +63,7 @@ def count_paths(n, m, horse_x, horse_y):
                 dp[i][j] = 0
             else:
                 dp[i][j] = dp[i-1][j] + dp[i][j-1]
-    
+
     return dp[n][m]
 
 inp=input().split(" ")

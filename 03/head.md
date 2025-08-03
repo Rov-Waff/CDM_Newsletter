@@ -1,6 +1,6 @@
 # 编辑部专版 - 用小学数学知识结束这场加密战争
 
-看到@贺鸣Herman5_论坛号 试图自研“加密算法”，结果不出两个小时就被攻破，其加密过程也不公开，密钥也不公开，并且仍在尝试继续做这种没有意义的“加密”。本编辑决定用最简单的小学数学知识，介绍一个无法攻破的加密算法，结束这场加密战争，并且，加密过程完全公开。
+看到@贺鸣Herman5\_论坛号 试图自研“加密算法”，结果不出两个小时就被攻破，其加密过程也不公开，密钥也不公开，并且仍在尝试继续做这种没有意义的“加密”。本编辑决定用最简单的小学数学知识，介绍一个无法攻破的加密算法，结束这场加密战争，并且，加密过程完全公开。
 
 ## 生成密钥
 
@@ -27,17 +27,17 @@ def generate_keys(p, q):
     """生成公钥和私钥"""
     n = p * q
     phi = (p - 1) * (q - 1)
-    
+
     # 选择与phi互质的e
     e = 2
     while e < phi:
         if gcd(e, phi) == 1:
             break
         e += 1
-    
+
     # 计算d (e的模反元素)
     d = modinv(e, phi)
-    
+
     # 公钥 (e, n), 私钥 (d, n)
     return (e, n), (d, n)
 
@@ -77,17 +77,17 @@ if __name__ == "__main__":
     # 给定p和q,越大越好
     p = 3
     q = 11
-    
+
     # 生成密钥对
     public_key, private_key = generate_keys(p, q)
     print(f"公钥: (e={public_key[0]}, n={public_key[1]})")
     print(f"私钥: (d={private_key[0]}, n={private_key[1]})")
-    
+
     # 加密示例
     plaintext = '草'
     ciphertext = encrypt(plaintext, public_key)
     print(f"加密 '{plaintext}' -> {ciphertext}")
-    
+
     # 解密示例
     decrypted = decrypt(ciphertext, private_key)
     print(f"解密 {ciphertext} -> '{decrypted}'")
@@ -98,6 +98,7 @@ if __name__ == "__main__":
 加解密过程，密钥生成过程已经给你了，p,q是两个617位的超大的质数
 
 公钥（Base64编码过的）
+
 ```
 -----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj+1rFATQFml/zSZxEegs
@@ -109,10 +110,13 @@ kwS6bmn4IjySlVGXhNJJNhpCvrgC05TttZ4VsNUBTGjahpbjz+eJvKzHyTXzVa1o
 iwIDAQAB
 -----END PUBLIC KEY-----
 ```
+
 密文（Base64）
+
 ```
 J6Z7JTu97dHjH8cMayxsktBWWsABlbuOEyUoRZWZPXr662qJjH0GDJt2j0lV6iB1dqeiTB9/ZV6COmesT5D7A67c4WJ6xEPkqhQrON+X8DCc/QH8zOlV4nwYUo+poXCKphEJ27tqiXKmpd0IAqVMwX4+xNi3FJeEfSXHsBEVxKA/pSdWbJpqDG3bH+Dsgv2oCmzoyh+dGTBvDKQ1D8gNOu9JUzlAK1GHty0AxcvKZAoi3SlNs26GwVXbK4qyjpY6lWEqXnsJXgq81aK+2CAbveuHOizMgAGZxq0FCmO8AN5Lcq9d5FT3HtxckQ0WEB1AsNjOEd4eKL22Sro6aVJqWQ==
 ```
+
 没人能够解密，除非你是广东人，手搓出来了靓仔计算机
 
 ## 写在后面

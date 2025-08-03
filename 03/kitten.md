@@ -12,6 +12,7 @@
 <img src="./assets/kitten-2.png" style="float:right" width=60px>
 
 ## [XiaoyuOS 4](https://shequ.codemao.cn/work/257012292)
+
 ![3](assets/kitten-3.png)
 
 **介绍**：一个用kitten模拟的手机操作系统，动效丝滑，甚至比我用CSS3写出来的动画还要舒服
