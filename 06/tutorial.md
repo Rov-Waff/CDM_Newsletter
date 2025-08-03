@@ -60,7 +60,7 @@ $ npm run dev #运行Vite开发环境
   ➜  press h + enter to show help
 ```
 
-这时候你可以访问 http://localhost:5173/，这就是 vite 给你创建好的示例页面
+这时候你可以访问 `http://localhost:5173/`，这就是 vite 给你创建好的示例页面
 
 然后运行
 
