@@ -131,6 +131,17 @@ export default defineConfig({
           { text: "后记", link: "/06/end" },
         ],
       },
+      {
+        text: "第7期",
+        link: "/07/index",
+        items: [
+          { text: "编辑部专版", link: "/07/head" },
+          { text: "积木纪元", link: "/07/kitten" },
+          { text: "传火者", link: "/07/tutorial" },
+          { text: "社区观察", link: "/07/news" },
+          { text: "后记", link: "/07/end" },
+        ],
+      },
     ],
 
     socialLinks: [
